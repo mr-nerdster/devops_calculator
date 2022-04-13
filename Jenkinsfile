@@ -1,10 +1,5 @@
 pipeline {
-    environment { 
-        registry = "nerdster/devops_calculator" 
-        registryCredential = 'docker-jenkins' 
-        dockerImage = '' 
-        
-    }
+
     agent any
 
     stages {
