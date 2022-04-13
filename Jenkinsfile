@@ -39,5 +39,13 @@ pipeline {
                 } 
             }
         }
+        
+        stage('Ansible Deploy') {
+            steps {
+                //Ansible Deploy to remote server (managed host)
+                ansiblePlaybook installation: 'Ansible', inventory: 'inventory', playbook: 'p1.yml'
+
+            }
+        }
     }
 }
