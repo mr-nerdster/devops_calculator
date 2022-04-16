@@ -96,7 +96,7 @@ public class Calculator {
 
     public static Double fact(int f) {
         double ans = 1;
-        logger.info("Calculating factorial of given number:" + f);
+        
         if (f < 0)
             ans = -1;
         else {
@@ -110,24 +110,24 @@ public class Calculator {
                 logger.info("Exception occured!!");
             }
         }
-        logger.info("Factorial of Input : "+ f + "is : " + ans);
+        logger.info("Factorial - Input : "+ f + "Output : " + ans);
         return ans;
     }
 
     public static double sqrt(double num) {
         double ans = 0;
-        logger.info("Calculating square root of given number:" + num);
+       
         if (num < 0)
             ans = -1;
         else
             ans = Math.sqrt(num);
-        logger.info("Square root of Input : "+num+ "is : " + ans);
+        logger.info("Square root - Input : "+num+ "Output : " + ans);
         return ans;
     }
 
     public static double pow(double num1, double num2) {
         double ans = 0;
-        logger.info("Calculating power function of given numbers:" + num1 + "," + num2);
+        
         if (num1 == 0)
             return 0;
         if (num2 == 0)
@@ -137,19 +137,19 @@ public class Calculator {
         } catch (Exception e) {
             logger.info("Exception occured!!");
         }
-        logger.info("Power of "+ num1 + "to "+"num2" + "is : " + ans);
+        logger.info("Power - Input : "+ num1 + " "+"num2" + "Output : " + ans);
         return ans;
     }
 
 
     public static double log(double num) {
         double ans = 0;
-        logger.info("Calculating natural log of given number:" + num);
+        
         if (num <= 0)
             ans = -1;
         else
             ans = Math.log(num);
-        logger.info("Natural Log of "+ num+ "is : " + ans);
+        logger.info("Natural Log - Input : "+ num+ "Output : " + ans);
         return ans;
     }
 }
